@@ -26,7 +26,7 @@ SECRET_KEY = 'c(e$!9@ia34wvil1d+1oge&bv9&04*)57e)@7yw%v2)z%prty('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.0.1', '192.168.0.107']
+ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = False
@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'resnik',
+    'simple_lesk',
 ]
 
 MIDDLEWARE = [
